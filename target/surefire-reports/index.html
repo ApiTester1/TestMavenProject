@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-com.agt.test.LoginTest">
-              <span class="suite-name border-failed">com.agt.test.LoginTest</span>
+              <span class="suite-name border-passed">com.agt.test.LoginTest</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-com.agt.test.LoginTest" class="hide-methods failed suite-com.agt.test.LoginTest"> (hide)</a> <!-- hide-methods failed suite-com.agt.test.LoginTest -->
-                      <a href="#" panel-name="suite-com.agt.test.LoginTest" class="show-methods failed suite-com.agt.test.LoginTest"> (show)</a> <!-- show-methods failed suite-com.agt.test.LoginTest -->
-                    </span>
-                    <div class="method-list-content failed suite-com.agt.test.LoginTest">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-com.agt.test.LoginTest" title="com.agt.test.LoginTest" hash-for-method="failedTest">failedTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-com.agt.test.LoginTest -->
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -141,25 +127,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-com.agt.test.LoginTest" class="panel com.agt.test.LoginTest">
-          <div class="suite-com.agt.test.LoginTest-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.agt.test.LoginTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="failedTest">
-                  </a> <!-- failedTest -->
-                  <span class="method-name">failedTest</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
-	at com.agt.test.LoginTest.failedTest(LoginTest.java:22)
-... Removed 38 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-com.agt.test.LoginTest-class-failed -->
           <div class="suite-com.agt.test.LoginTest-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -240,28 +207,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'failedTest')
+data.setCell(0, 1, 'negativeTest')
 data.setCell(0, 2, 'com.agt.test.LoginTest')
-data.setCell(0, 3, 12);
+data.setCell(0, 3, 13);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'negativeTest')
+data.setCell(1, 1, 'skipTest')
 data.setCell(1, 2, 'com.agt.test.LoginTest')
-data.setCell(1, 3, 0);
+data.setCell(1, 3, 1);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'skipTest')
+data.setCell(2, 1, 'positiveLoginTest')
 data.setCell(2, 2, 'com.agt.test.LoginTest')
 data.setCell(2, 3, 0);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'positiveLoginTest')
-data.setCell(3, 2, 'com.agt.test.LoginTest')
-data.setCell(3, 3, 0);
 window.suiteTableData['com.agt.test.LoginTest']= { tableData: data, tableDiv: 'times-div-com.agt.test.LoginTest'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 12 ms</span>
+              <span class="suite-total-time">Total running time: 14 ms</span>
               <div id="times-div-com.agt.test.LoginTest">
               </div> <!-- times-div-com.agt.test.LoginTest -->
             </div> <!-- times-div -->
@@ -289,22 +252,16 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.agt.test.LoginTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">failedTest</span>
+                <span class="method-name">negativeTest</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">negativeTest</span>
-                <span class="method-start">18 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
                 <span class="method-name">positiveLoginTest</span>
-                <span class="method-start">19 ms</span>
+                <span class="method-start">13 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">skipTest</span>
-                <span class="method-start">20 ms</span>
+                <span class="method-start">14 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
