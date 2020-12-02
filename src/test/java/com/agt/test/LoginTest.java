@@ -16,11 +16,11 @@ public class LoginTest {
 		System.out.println("LoginTest.negativeTest()");
 	}
 
-	/*@Test
+	@Test
 	public void failedTest() {
 		
 		Assert.assertTrue(false);
-	}*/
+	}
 
 	@Test
 	public void skipTest() {
